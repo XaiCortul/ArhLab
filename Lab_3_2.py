@@ -7,9 +7,7 @@ class ShapeCalculator:
         }
 
     def calculate_area(self, shape_type):
-        # Перевірка, чи є потрібний метод у словнику
-        if shape_type in self.shape_methods:
-            # Виклик відповідного методу
+        if shape_type in self.shape_methods: 
             self.shape_methods[shape_type]()
         else:
             print("Unknown shape type")
@@ -37,5 +35,5 @@ calculator = ShapeCalculator()
 calculator.calculate_area("circle")
 calculator.calculate_area("rectangle")
 calculator.calculate_area("triangle")
-calculator.calculate_area("unknown")  # Виведе "Unknown shape type"
+calculator.calculate_area("unknown") 
 
